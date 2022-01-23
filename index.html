@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <style>
+        .container {
+            width: 80%;
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        .container h1{
+            display: block;
+            background-color: crimson;
+            position: sticky;
+            top: 2px;
+            z-index: 1;
+        }
+
+        .container .subcontainer {
+            width: 33%;
+            height: 300px;
+            display: inline-block;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .container .subcontainer::after {
+            content: "MINATO NAMIKAZE"attr(name);
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba(219, 21, 61, 0.6);
+            height: 100%;
+            width: 100%;
+            text-align: center;
+            line-height: 300px;
+            transform: scale(0);
+            transition: transform 1s ease-in-out;
+            font-size: 30px;
+            font-family: 'PERMANENT MARKER';
+        }
+
+        .container .subcontainer:hover::after {
+            transform: scale(0.8);
+        }
+
+        .container .subcontainer img {
+            width: 100%;
+            height: 100%;
+            transition: transform 1s ease-in-out;
+        }
+
+        .container .subcontainer:hover img {
+            transform: scale(1.2);
+        }
+
+        .container .big {
+            width: 66%;
+            height: 600px;
+            float: left;
+        }
+
+        .container .big::after {
+            line-height: 600px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+    <div class="subcontainer">
+        <img src="./img3.png" alt="" />
+    </div>
+    <div class="subcontainer">
+        <img src="./img8.png" alt="" />
+    </div>
+    <div class="subcontainer">
+        <img src="./img2.png" alt="" />
+    </div>
+    <div class="subcontainer">
+        <img src="./img5.png" alt="" />
+    </div>
+    <div class="subcontainer">
+        <img src="./img6.png" alt="" />
+    </div>
+    <div class="subcontainer">
+        <img src="./img7.png" alt="" />
+    </div>
+    </div>
+</body>
+
+</html>
