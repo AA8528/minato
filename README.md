@@ -1,0 +1,2 @@
+# minato
+MINATO NAMIKAZE
